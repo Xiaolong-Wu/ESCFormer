@@ -1,0 +1,11 @@
+conda create -n eegICA-gpu python=3.9
+conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.4 -c pytorch -c nvidia
+
+import torch
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
+print(torch.version.cuda)
+
+conda install scipy==1.10.1
+conda install numpy==1.23.5
+conda install matplotlib==3.7.0
