@@ -154,7 +154,7 @@ Before running it, configure the following variables near the beginning of the f
 - `modelEpoch`: sets the number of training epochs.
 - `modelBatchSize`: sets the batch size.
 - `project_LORETA`:
-- `modelNo[0]`: selects EEG combined with sLORETA-cube input.
+- `modelNo[0]`: selects the convolutional, LSTM, Transformer, or TimesBlock-based architecture (EEG combined with sLORETA-cube input).
 - `project_eegICAcloud`:
 - `modelNo[0]`: selects EEG-sequence-only input or EEG combined with V-cube input.
 - `modelNo[1]`: selects the convolutional, LSTM, Transformer, or TimesBlock-based architecture.
