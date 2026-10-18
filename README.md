@@ -31,6 +31,7 @@ D:\
 │       ├── eegGA\
 │       └── pca_ica\
 └── test_pycharm\
+    ├── project_LORETA\
     └── project_eegICAcloud\
 ```
 
@@ -107,6 +108,7 @@ D:\test_pycharm\project_eegICAcloud\dataset_test
 Open the following directory as a project in PyCharm:
 
 ```text
+D:\test_pycharm\project_LORETA
 D:\test_pycharm\project_eegICAcloud
 ```
 
@@ -141,16 +143,21 @@ print(torch.version.cuda)
 The main program is:
 
 ```text
+D:\test_pycharm\project_LORETA\run_LORETA.py
+D:\test_pycharm\project_LORETA\run.py
 D:\test_pycharm\project_eegICAcloud\run.py
 ```
 
 Before running it, configure the following variables near the beginning of the file:
 
 - `dataNo`: selects the BCI or DoC dataset and the DoC auditory paradigm.
-- `modelNo[0]`: selects EEG-sequence-only input or EEG combined with V-cube input.
-- `modelNo[1]`: selects the convolutional, LSTM, Transformer, or TimesBlock-based architecture.
 - `modelEpoch`: sets the number of training epochs.
 - `modelBatchSize`: sets the batch size.
+- `project_LORETA`:
+- `modelNo[0]`: selects EEG combined with sLORETA-cube input.
+- `project_eegICAcloud`:
+- `modelNo[0]`: selects EEG-sequence-only input or EEG combined with V-cube input.
+- `modelNo[1]`: selects the convolutional, LSTM, Transformer, or TimesBlock-based architecture.
 
 The detailed network parameters, including convolutional dimensions, dropout, Transformer layers, and attention heads, are defined in:
 
