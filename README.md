@@ -1,6 +1,6 @@
 # ESCFormer
 
-ESCFormer is a spatiotemporal Transformer developed for EEG-based classification of disorders of consciousness (DoC).
+
 ESCFormer combines multi-segment EEG sequences with virtual source-space representations (V-cubes) generated using Hilbert-based stable-fastICA. The framework was developed for the classification of MCS- and VS and was additionally evaluated on the BCI Competition IV 2a motor-imagery dataset.
 
 ## Article
